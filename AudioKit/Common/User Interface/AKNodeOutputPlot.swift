@@ -69,7 +69,11 @@ open class AKNodeOutputPlot: EZAudioPlot {
         self.backgroundColor = AKColor.white
         self.shouldCenterYAxis = true
         self.bufferSize = UInt32(bufferSize)
-
+        
         setupNode(input)
+    }
+    
+    init(frame: frame) {
+        super.init(frame: frame)
     }
 }

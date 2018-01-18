@@ -78,6 +78,10 @@ open class AKNodeFFTPlot: EZAudioPlot, EZAudioFFTDelegate {
         setupNode(input)
 
     }
+    
+    init(frame: frame) {
+        super.init(frame: frame)
+    }
 
     /// Callback function for FFT data:
     ///
